@@ -13,11 +13,15 @@ class TaskModel:
         self.task_name = None
         self.is_done = False
         
-    def is_done(self):
-        return self.is_done
-
     def mark_as_completed(self):
         self.is_completed = True
 
     def is_task_completed(self):
+        return self.is_completed
+
+    def delete_task(self):
+        self.task_name = None
+        self.is_completed = False
+
+    def is_completed(self):
         return self.is_completed
