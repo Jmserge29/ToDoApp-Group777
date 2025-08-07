@@ -1,4 +1,4 @@
-from task_model import 
+from task_model import TaskModel
 
 def main():
     task = TaskModel("Estudiar para el examen")
