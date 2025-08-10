@@ -1,0 +1,69 @@
+Informe trabajo programación móvil
+
+1. Pasos realizados:
+- Creamos el repo TodoApp-Group777
+- Agregamos a los otros miembros del trabajo como colaboradores
+- Clonamos el repositorio en nuestras computadoras
+- Creamos los archivos iniciales: main.py, task_model.py y .gitignore
+- Hicimos commit y push de la estructura base
+- Cada estudiante creó su propia rama: Serge, Olmos, Rodriguez
+- Serge añadió funcionalidad para marcar tareas como completadas
+- Olmos añadió funcionalidad para eliminar tareas y actualizó README.md
+- Rodriguez subió un cambio conflictivo en task_model.py y lo resolvió
+- Creamos la rama Group777 y fuimos fusionando las ramas individuales
+- Resolvimos conflictos y fusionamos con la rama main mediante Pull Request
+- Eliminamos ramas individuales y la de grupo
+
+2. Comandos Git:
+- git clone <URL>: Clonar repositorio
+- git checkout -b <rama>: Crear una nueva rama
+- git add <archivos>: Añadir cambios al área de preparación
+- git commit -m "mensaje": Confirmar cambios
+- git push origin <rama>: Subir cambios al repositorio
+- git merge <rama>: Fusionar ramas
+- git push origin --delete <rama>: Eliminar rama
+
+3. Conflictos:
+- Conflicto en task_model.py entre atributos is_completed / is_done y
+  métodos mark_as_complete / set_done
+- También en main.py debido a cambios simultáneos en el flujo principal
+- La solución fue combinar cambios, manteniendo is_completed como atributo
+  principal y uniendo la lógica de los métodos
+
+4. Contribuciones:
+- Serge: Añadió mark_as_complete en task_model.py y actualizó main.py.
+- Olmos: Añadió delete_task en task_model.py y actualizó README.md.
+- Rodriguez: Simuló conflicto con set_done y remove_task, y resolvió
+  conflictos en task_model.py y main.py.
+
+5. Reflexiones:
+- Aprendimos a coordinar ramas y resolver conflictos trabajando en equipo.
+- Git es una herramienta potente para trabajo colaborativo.
+- Los Pull Request ayudan a mantener la calidad del código y a evitar errores.
+
+Preguntas de reflexión
+
+1) ¿Cómo coordinaron el trabajo en equipo para evitar conflictos innecesarios?
+R/ Nos organizamos asignando tareas específicas a cada uno y revisando cambios
+   antes de hacer merge.
+
+2) ¿Qué aprendieron sobre la resolución de conflictos en Git?
+R/ Que es importante entender el código de todos para combinar cambios sin
+   perder funcionalidad.
+
+3) ¿Por qué es importante usar Pull Request en proyectos colaborativos?
+R/ Permite revisión de código y evita que errores pasen a producción.
+
+4) ¿Cómo podría mejorarse el flujo de trabajo con herramientas como CI/CD?
+R/ Automatizando pruebas y revisiones antes de integrar cambios a main.
+
+Descripción historial commits
+
+- 599bd21: Initial commit.
+- e901522: Inicializar proyecto TodoApp.
+- 44153a3: (origin/olmos, Olmos): Añadir funcionalidad para eliminar y actualizar tareas.
+- d567e2a: (origin/serge): Añadir funcionalidad para marcar tareas como completadas.
+- 2d73615: (origin/Rodriguez): Añadir set_done y remove_task en TaskModel.
+- 7fc5703: Merge remote-tracking branch origin/Rodríguez into Group777.
+- bb65ce2: (origin/Group777): Resolver conflicto combinando métodos y atributos.
+- ec14439: (HEAD -> main, origin/main, origin/HEAD): Merge pull request #1 from jmserge29/Group777.
